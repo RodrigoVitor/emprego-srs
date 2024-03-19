@@ -2,8 +2,17 @@
 @section('title', 'Teste')
 
 <style>
-    main {
+    main, #your-cv {
         background-color: #003366 
+    }
+    #button-cv {
+        width:250px;
+        height: 50px;
+        font-size: 22px;
+        background-color: #FFCA28 
+    }
+    #button-cv:hover {
+        background-color: #f3bd1e 
     }
 </style>
 
@@ -61,5 +70,12 @@
         </div>
 
         <a href="#" class="d-block text-center" style="font-size: 18px">Ver todas as vagas</a>
+    </section>
+
+    <section id="your-cv" class="p-4 text-center">
+        <p class="text-light display-6">Ta com dificuldade em <br> montar seu <span class="fw-bold">Currículo?</span></p>
+        <p class="text-light display-6 mt-4">Não se preocupe, aqui <br> montamos para você.</p>
+
+        <a href="#" id="button-cv" class="btn mt-4">Montar meu curriculo</a>
     </section>
 @endsection

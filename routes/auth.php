@@ -17,8 +17,11 @@ Route::middleware('guest')->group(function () {
 
     Route::post('register', [RegisteredUserController::class, 'store']);
 
-    Route::get('login', [AuthenticatedSessionController::class, 'create'])
-                ->name('login');
+    //Login like candidate
+    Route::get('entrar-como-candidato', [AuthenticatedSessionController::class, 'createCandidate'])
+                ->name('login-candidate');
+
+    //End longin like candidate
 
     Route::post('login', [AuthenticatedSessionController::class, 'store']);
 

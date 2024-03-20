@@ -55,8 +55,31 @@
             </span>
           </div>
         </div>
-      </nav>
+    </nav>
+
     @yield('content')
+
+    <footer style="background-color: #001E3B;" class="pb-2">
+        <div class="container text-center pt-3">
+            <div class="row">
+              <div class="col-md mt-3">
+                <a href="#" class="text-light" style="font-size:1.4rem">Ver Vagas</a>
+              </div>
+              <div class="col-md mt-3">
+                <a href="#" class="text-light" style="font-size:1.4rem">Criar meu Curriculo</a>
+              </div>
+              <div class="col-md mt-3">
+               <a href="#" class="text-light" style="font-size:1.4rem"> Como funciona</a>
+              </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <p class="text-center text-light">&copy; Rodrigo Vitor 2024</p>
+        </div>
+    </footer>
+
+
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

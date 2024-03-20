@@ -12,13 +12,12 @@ use Illuminate\View\View;
 
 class AuthenticatedSessionController extends Controller
 {
-    /**
-     * Display the login view.
-     */
-    public function create(): View
+    //Login like Candidate
+    public function createCandidate(): View
     {
         return view('auth.login');
     }
+    //End Login Like Candidate
 
     /**
      * Handle an incoming authentication request.

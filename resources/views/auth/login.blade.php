@@ -1,8 +1,8 @@
-<x-guest-layout>
+{{-- <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <form method="POST" action="{{ route('login') }}">
+    <form method="POST" action="{{ route('login-candidate') }}">
         @csrf
 
         <!-- Email Address -->
@@ -44,4 +44,37 @@
             </x-primary-button>
         </div>
     </form>
-</x-guest-layout>
+</x-guest-layout> --}}
+
+@extends('layouts.appGeneral')
+
+@section('title', 'Entrar como Candidato')
+@section('link-css')
+    <link rel="stylesheet" href="/css/loginCandidate.css">
+@endsection
+
+{{-- 003366 --}}
+
+@section('content')
+    <section>
+        <div id="header-candidate" class="p-4">
+            <h1 class="text-center text-light">Entrar como Candidato</h1>
+        </div>
+        <div id="form" class="w-75 m-auto text-bg-light p-4 mt-md-3">
+            <form class="row d-flex justify-content-center">
+                <div class="mb-3 col-sm-12 col-md-8">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">error</div>
+                </div>
+                <div class="mb-3 col-sm-12 col-md-8">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" name="password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordHelp">
+                  <div id="passwordHelp" class="form-text">error</div>
+                </div>
+                <button type="submit" class="btn btn-primary w-50">Entrar</button>
+                <div id="passwordHelp" class="form-text text-center mt-3">Não tem conta? <a href="#">Cadastra-se gratuitamente</a></div>
+              </form>
+        </div>
+    </section>
+@endsection

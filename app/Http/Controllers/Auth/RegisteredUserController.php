@@ -15,13 +15,13 @@ use Illuminate\View\View;
 
 class RegisteredUserController extends Controller
 {
-    /**
-     * Display the registration view.
-     */
-    public function create(): View
+    // Register like candidate
+    public function createCandidate(): View
     {
-        return view('auth.register');
+        return view('auth.candidate.register');
     }
+
+    //end Register like candidate
 
     /**
      * Handle an incoming registration request.

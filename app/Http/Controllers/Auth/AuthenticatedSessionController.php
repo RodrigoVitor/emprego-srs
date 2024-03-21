@@ -15,7 +15,7 @@ class AuthenticatedSessionController extends Controller
     //Login like Candidate
     public function createCandidate(): View
     {
-        return view('auth.login');
+        return view('auth.candidate.login');
     }
     //End Login Like Candidate
 
